@@ -34,6 +34,7 @@
 	});  */
 	 $(window).scroll(function(){
 			var scroll = $(window).scrollTop();
+			console.log(scroll);
 			if(scroll > 0){
 			$(".header").addClass("change1");
 			$(".hdheight").addClass("change");
