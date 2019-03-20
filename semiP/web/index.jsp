@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@page import="user.model.vo.LookBomUser" %>
-    <%
-    LookBomUser loginUser = (LookBomUser)session.getAttribute("loginUser");
-    %> 
+ <%--    <%
+    LookBomUser loginUser1 = (LookBomUser)session.getAttribute("loginUser");
+    %> --%> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -181,15 +181,15 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 </style>
 </head>
 <body style="margin:0px; padding:0px;">
-
+ <%@ include file="views/common/header.jsp" %>
 <br><br><br><br><br><br><br><br><br><br>
- <% if(loginUser.getUserId().equals("user01")){ %>
+ <%-- <% if(loginUser.getUserId().equals("user01")){ %>
 	<%@ include file="views/common/adminHeader.jsp" %>
 <% }else{ %>
 	<%@ include file="views/common/header.jsp" %>
-<% } %> 
-
-
+<%} %>
+ --%>
+ 
 <ul class="slides">
     <input type="radio" name="radio-btn" id="img-1" checked />
     <li class="slide-container">

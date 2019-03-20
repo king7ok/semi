@@ -301,7 +301,11 @@
 <a href="#"><img src="/semi/resources/images/로고.png" id="logo" class="logo"></a>
 
 <div  style="width:25%;height:130px;  float:right;">
-<%if(loginUser.getUserId() == "user01"){ %>
+<td><a id="mybar" href="/lb/views/user/login.jsp"><img src="/semi/resources/images/로그인.jpg">로그인</a></td>
+<td><a id="mybar" href="#"><img src="/semi/resources/images/회원가입.jpg">회원가입</a></td>
+<td><a id="mybar" href="#"><img src="/semi/resources/images/장바구니.jpg">장바구니</a></td>
+<td><a id="mybar" href="#"><img src="/semi/resources/images/마이페이지.jpg">마이페이지</a></td>
+<%-- <%if(loginUser.getUserId().equals("user01")){ %>
 <table>
 <tr>
 <td><a id="mybar" href="#"><img src="/semi/resources/images/로그인.jpg">상품관리</a></td>
@@ -311,7 +315,7 @@
 </tr>
 </table>
 
-<%}else{ %>
+<%}else { %>
 <table>
 <tr>
 <td><a id="mybar" href="/lb/views/user/login.jsp"><img src="/semi/resources/images/로그인.jpg">로그인</a></td>
@@ -320,7 +324,7 @@
 <td><a id="mybar" href="#"><img src="/semi/resources/images/마이페이지.jpg">마이페이지</a></td>
 </tr>
 </table>
-<%} %>
+<%} %>  --%>
 <!-- 실시간 랭킹바  -->
 <table>
 <tr>
