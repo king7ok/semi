@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;semiP/src/main/controller/DeletePost.java&apos;" deleteContents="false" description="Delete resource &apos;semiP/src/main/controller/DeletePost.java&apos;" element1="/semiP/src/main/controller/DeletePost.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1552233362223"/>&#x0A;&#x0A;<refactoring comment="Delete resource &apos;semiP/src/member&apos;" deleteContents="false" description="Delete resource &apos;semiP/src/member&apos;" element1="/semiP/src/member" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1552398865854"/>
+</session>
