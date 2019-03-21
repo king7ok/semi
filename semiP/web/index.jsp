@@ -183,12 +183,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 <body style="margin:0px; padding:0px;">
  <%@ include file="views/common/header.jsp" %>
 <br><br><br><br><br><br><br><br><br><br>
- <%-- <% if(loginUser.getUserId().equals("user01")){ %>
-	<%@ include file="views/common/adminHeader.jsp" %>
-<% }else{ %>
-	<%@ include file="views/common/header.jsp" %>
-<%} %>
- --%>
+
  
 <ul class="slides">
     <input type="radio" name="radio-btn" id="img-1" checked />

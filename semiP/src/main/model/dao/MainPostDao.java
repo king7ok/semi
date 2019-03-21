@@ -1,14 +1,29 @@
 package main.model.dao;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 import main.model.vo.MainPost;
 
 public class MainPostDao {
 
-	public MainPost insertPost(Connection conn, String url, String img) {
-		// TODO Auto-generated method stub
-		return null;
+	public int insertPost(Connection conn, String url, String img) {
+		PreparedStatement stmt = null;
+		String query = "insert into mainpost (postno,url,img) values (post_seq,?,?)";
+		int result =0;
+		try{
+			stmt = conn.prepareStatement(query);
+			stmt.setString(1, url);
+			stmt.setString(2, img);
+			result = stmt.executeUpdate();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			
+		}
+		return result;
 	}
 
 	public MainPost deletePost(Connection conn, String url, String img) {

@@ -11,7 +11,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<script src="resources/js/jquery-3.3.1.min.js"></script>
+<script src="/semi/resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 		function show(){
 			var max = document.getElementById("searchmax");
@@ -59,15 +59,15 @@
 	 opacity:0.7;
 	}
 	.header {
-	width:100%;
+	width:100vw;
 	position:fixed;
 	z-index:10;
-	height:150px;
+	height:15vh;
 
 	}
 	.hdheight{
 	background: white;
-	height:170px;
+	height:20vh;
 	}
 	.topbar {
 	width:100%;
@@ -77,14 +77,14 @@
 	padding:  0px;
 	}
 	.logo2{
-	width:100px;
-	height:100px;
+	width:6vw;
+	height:10vh;
 	float:left;
 	padding : 10px;
 	}
 	.logo{
-	width:200px;
-	height:50px;
+	width:12vw;
+	height:5vh;
 	position:relative;
 	top:10px;
 	left:10px;
@@ -133,7 +133,7 @@
  	#navi li ul{
  position:absolute;
  opacity:0;
- width:180px;
+ width:14vw;
  box-shadow:0 10px 20px 0 rgba(0,0,0,0.2);
  -webkit-boix-shadow:0 12px 25px 0 rgba(0,0,0,0.2);
  }
@@ -149,7 +149,7 @@
  }
  	#navi li:hover ul li{
  padding:10px 10;
- height:50px;
+ height:5vh;
  line-height:40px;
  /* background:rgba(0,0,0,0.4); */
  background:white;
@@ -163,14 +163,14 @@
  font-size:small;
  }
 	 #mybar img{
- width:15px;
- height:15px;
+ width:1vw;
+ height:2vh;
  padding-top:15px;
  padding-left:15px;
  }
 	.myBtn img{
-		width:50px;
- 	height:50px;
+		width:3vw;
+ 	height:5vh;
 
  }
  	.myBtn{
@@ -239,7 +239,7 @@
             width: 100vw; /* Full width */
             height: 100vh; /* Full height */
             overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgb(0,0,0); /* Falsemiack color */
             background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
            
 	}
@@ -302,7 +302,7 @@
 <a href="#"><img src="/semi/resources/images/로고.png" id="logo" class="logo"></a>
 
 <div  style="width:25%;height:130px;  float:right;">
-<td><a id="mybar" href="/lb/views/user/login.jsp"><img src="/semi/resources/images/로그인.jpg">로그인</a></td>
+<td><a id="mybar" href="/semi/views/user/login.jsp"><img src="/semi/resources/images/로그인.jpg">로그인</a></td>
 <td><a id="mybar" href="#"><img src="/semi/resources/images/회원가입.jpg">회원가입</a></td>
 <td><a id="mybar" href="#"><img src="/semi/resources/images/장바구니.jpg">장바구니</a></td>
 <td><a id="mybar" href="#"><img src="/semi/resources/images/마이페이지.jpg">마이페이지</a></td>
@@ -319,7 +319,7 @@
 <%}else { %>
 <table>
 <tr>
-<td><a id="mybar" href="/lb/views/user/login.jsp"><img src="/semi/resources/images/로그인.jpg">로그인</a></td>
+<td><a id="mybar" href="/semi/views/user/login.jsp"><img src="/semi/resources/images/로그인.jpg">로그인</a></td>
 <td><a id="mybar" href="#"><img src="/semi/resources/images/회원가입.jpg">회원가입</a></td>
 <td><a id="mybar" href="#"><img src="/semi/resources/images/장바구니.jpg">장바구니</a></td>
 <td><a id="mybar" href="#"><img src="/semi/resources/images/마이페이지.jpg">마이페이지</a></td>

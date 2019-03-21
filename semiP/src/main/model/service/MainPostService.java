@@ -10,11 +10,11 @@ import java.sql.Connection;
 public class MainPostService {
 	public MainPostService() {}
 	private MainPostDao mdao = new MainPostDao();
-	public MainPost insertPost(String url,String img) {
+	public int insertPost(String url,String img) {
 		Connection conn = getConnection();
-		MainPost mpost = mdao.insertPost(conn, url, img);
+		int result = mdao.insertPost(conn, url, img);
 		close(conn);
-		return mpost;
+		return result;
 	}
 	public MainPost deletePost(String url,String img) {
 		Connection conn = getConnection();

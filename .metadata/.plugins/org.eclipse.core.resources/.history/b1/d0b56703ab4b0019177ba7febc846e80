@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body style="padding:0; margin:0;">
+<%@ include file="../common/adminHeader.jsp" %>
+<br><br><br><br><br><br><br><br><br><br>
+<table>
+<tr><td id="row1"></td><td id="row2"></td></tr>
+<tr><td id="row1"></td><td id="row2"></td></tr>
+<tr><td id="row1"></td><td id="row2"></td></tr>
+<tr><td id="row1"></td><td id="row2"></td></tr>
+<tr><td id="row1"></td><td id="row2"></td></tr>
+<tr><td id="row1"></td><td id="row2"></td></tr>
+</table>
+
+
+<%@ include file= "../common/footer.jsp" %>
+</body>
+</html>

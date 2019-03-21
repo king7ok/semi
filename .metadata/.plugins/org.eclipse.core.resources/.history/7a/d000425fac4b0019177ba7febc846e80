@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+ #row1 {
+ 	width:20vw;
+ 	height:20vh;
+
+ }
+ #row1 img{
+ 	width:20vw;
+ 	height:20vh;
+ }
+ #row2 {
+ 	width:30vw;
+ 	height:10vh;
+ 
+ }
+ table {
+ border:1px solid black;
+ }
+</style>
+</head>
+<body style="padding:0; margin:0;">
+<%@ include file="../common/adminHeader.jsp" %>
+<br><br><br><br><br><br><br><br><br><br>
+<!-- <table align="center">
+<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
+<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
+<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
+<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
+<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
+<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
+</table> -->
+<table>
+<tr><td id="row1" rowspan="2"></td><td id="row2"></td></tr>
+<tr>						<td id="row2"></td></tr>
+<tr><td id="row1" rowspan="2"></td><td id="row2"></td></tr>
+<tr>						<td id="row2"></td></tr>
+<tr><td id="row1" rowspan="2"></td><td id="row2"></td></tr>
+<tr>						<td id="row2"></td></tr>
+<tr><td id="row1" rowspan="2"></td><td id="row2"></td></tr>
+<tr>						<td id="row2"></td></tr>
+<tr><td id="row1" rowspan="2"></td><td id="row2"></td></tr>
+<tr>						<td id="row2"></td></tr>
+<tr><td id="row1" rowspan="2"></td><td id="row2"></td></tr>
+<tr>						<td id="row2"></td></tr>
+</table>
+
+
+<%@ include file= "../common/footer.jsp" %>
+</body>
+</html>

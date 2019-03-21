@@ -5,22 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="resources/js/jquery-3.3.1.min.js"></script>
+<script src="../../resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
-/* 	 $(window).scroll(function(){
-		var scroll = $(window).scrollBottom() ;
-		if(scroll > 200){
-			$(".sidebar").addClass("stop");
-		}else{
-			$(".sidebar").romoveClass("stop");
-		}
-	 }); */
-	 $(window).scroll(function(){
-			var scroll = $(window).scrollTop();
-			console.log(scroll);
-		
-		}); 
-	
+
 </script>
 <style type="text/css">
 	body{margin:0; padding:0;}
@@ -164,13 +151,13 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 <aside class="sidebar">
 <table>
-	<tr><td style="padding:1vh">NEW</td></tr>
-	<tr><td style="padding:1vh">BEST</td></tr>
-	<tr><td style="padding:1vh">Outer</td></tr>
-	<tr><td style="padding:1vh">Top</td></tr>
-	<tr><td style="padding:1vh">Bottom</td></tr>
-	<tr><td style="padding:1vh">Accessories</td></tr>
-	<tr><td style="padding:1vh">Shose</td></tr>
+	<tr><td style="padding:1vh"><a href="#">NEW</a></td></tr>
+	<tr><td style="padding:1vh"><a href="#">BEST</a></td></tr>
+	<tr><td style="padding:1vh"><a href="#">Outer</a></td></tr>
+	<tr><td style="padding:1vh"><a href="#">Top</a></td></tr>
+	<tr><td style="padding:1vh"><a href="#">Bottom</a></td></tr>
+	<tr><td style="padding:1vh"><a href="#">Accessories</a></td></tr>
+	<tr><td style="padding:1vh"><a href="#">Shoes</a></td></tr>
 </table>
 </aside>
 
