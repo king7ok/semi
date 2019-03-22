@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>lb</title>
-<script type="text/javascript" src = "/lb/resources/js/jquery-3.3.1.min.js"></script>
+<title>semi</title>
+<script type="text/javascript" src = "/semi/resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 $(function (){
 	
@@ -20,7 +20,7 @@ $(function (){
 });
 function checkId(){
 	$.ajax({
-		url: "/lb/checkid",
+		url: "/semi/checkid",
 		type: "post",
 		data:{userid: $("#userid").val() },
 		success: function(data){
@@ -57,7 +57,7 @@ $(function(){
 </head>
 <section>
 	<h2 align = "center">회원가입</h2><br>
-	<form action = "/lb/insert" method = "get">
+	<form action = "/semi/insert" method = "get">
 
 	<table width = "650" align = "center">
 		<tr height = "40">

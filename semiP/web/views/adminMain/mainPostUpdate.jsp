@@ -1,15 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="main.model.vo.MainPost" %>
+    <%@ page import="main.model.vo.MainPost ,java.util.ArrayList"  %>
     <%
- /*    MainPost mPost = (MainPost)request.getAttribute("mpost");
-    String message = (String)request.getAttribute("message"); */
+	ArrayList<MainPost> list = (ArrayList<MainPost>)request.getAttribute("list");
     %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="/semi/resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 /* if(message != null){
 	alert(message);
@@ -46,63 +46,39 @@
  height:3vh;
  font-size:800;
  }
- table tr td {
-
+ #viewmp {
+ width:15vw;
+ height:15vh;
  }
 </style>
 </head>
 <body style="padding:0; margin:0;">
 <%@ include file="../common/adminHeader.jsp" %>
 <br><br><br><br><br><br><br><br><br><br>
-<!-- <table align="center">
-<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
-<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
-<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
-<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
-<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
-<tr><td id="row1"><img src ="#'"></td><td id="row2"></td></tr>
-</table> -->
-<!-- <table align="center">
-<tr><th id="row1" rowspan="2"><img src ="/semi/resources/images/검색.jpg'"></th>
-							<td align="center" id="row2">URL : <input type="text"  id="url" ></td></tr>
-<tr>						<td id="row2"></td></tr>
-<tr><th id="row1" rowspan="2"><img src ="#'"></th>
-							<td id="row2"></td></tr>
-<tr>						<td id="row2"></td></tr>
-<tr><th id="row1" rowspan="2"><img src ="#'"></th>
-							<td id="row2"></td></tr>
-<tr>						<td id="row2"></td></tr>
-<tr><th id="row1" rowspan="2"><img src ="#'"></th>
-							<td id="row2"></td></tr>
-<tr>						<td id="row2"></td></tr>
-<tr><th id="row1" rowspan="2"><img src ="#'"></th>
-							<td id="row2"></td></tr>
-<tr>						<td id="row2"></td></tr>
-<tr><th id="row1" rowspan="2"><img src ="#'"></th>
-							<td id="row2"></td></tr>
-<tr>						<td id="row2"></td></tr>
-</table> -->
-<!-- <table align="center">
-<tr><td rowspan="2" id="row1"><img src ="#"></td>
-							<form action="/semi/mpinsert"><td id="row2" colspan="2">URL : <input type="text" name="url1"></td>	</tr>
-<tr>								<td id="row2" colspan="2">IMG : <input type="text" name="img1"><button type="submit" id="update">수정</button></td></form>	</tr>
-<tr><td rowspan="2" id="row1"><img src ="#"></td>
-									<form action="/semi/mpinsert"><td id="row2" colspan="2">URL : <input type="text" name="url2"></td>	</tr>
-<tr>								<td id="row2" colspan="2">IMG : <input type="text" name="img2"><button type="submit" id="update">수정</button type="submit" ><button>삭제</button></td></form>		</tr>
-<tr><td rowspan="2" id="row1"><img src ="#"></td>
-									<form action="/semi/mpinsert"><td id="row2" colspan="2">URL : <input type="text" name="url3"></td>	</tr>
-<tr>								<td id="row2" colspan="2">IMG : <input type="text" name="img3"><button type="submit" id="update">수정</button></td></form>	</tr>
-<tr><td rowspan="2" id="row1"><img src ="#"></td>
-									<form action="/semi/mpinsert"><td id="row2" colspan="2">URL : <input type="text" name="url4"></td>	</tr>
-<tr>								<td id="row2" colspan="2">IMG : <input type="text" name="img4"><button type="submit" id="update">수정</button></td></form>	</tr>
-<tr><td rowspan="2" id="row1"><img src ="#"></td>
-									<form action="/semi/mpinsert"><td id="row2" colspan="2">URL : <input type="text" name="url5"></td>	</tr>
-<tr>								<td id="row2" colspan="2">IMG : <input type="text" name="img5"><button type="submit" id="update">수정</button></td></form>	</tr>
-<tr><td rowspan="2" id="row1"><img src ="#"></td>
-									<form action="/semi/mpinsert"><td id="row2" colspan="2">URL : <input type="text" name="url6"></td>	</tr>
-<tr>								<td id="row2" colspan="2">IMG : <input type="text" name="img6"><button type="submit" id="update">수정</button></td></form>	</tr>
-</table> -->
 
+<form name="mpselect" id="mpselect" method="post" action="/semi/mpselect" enctype="multipart/form-data">
+<table align="center">
+<tr>
+<%-- 	<%for(int i =0;i<list.size();i++){ %>
+		 <td><a id="viewbutton" href="<%= list.get(i).getUrl()%>"><img id="viewmp" src="<%= list.get(i).getImg()%>"></a></td>
+		 <td><button type="checkbox" value="<%=i%>"></button></td>
+		<%if(i == 4 ){ %>
+		</tr><td><a id="viewbutton" href="<%= list.get(i).getUrl()%>"><img id="viewmp" src="<%= list.get(i).getImg()%>"></a></td>
+		<td><button type="checkbox" value="<%=i%>"></button></td><tr> 
+	
+		<%} }%> --%>
+			<%for(int i =0;i<list.size();i++){ %>
+		 <td><img id="viewmp" src="<%= list.get(i).getImg()%>"></td>
+		<%--  <td><button type="checkbox" value="<%=i%>"></button></td> --%>
+		<%if(i == 4 ){ %>
+		</tr><td><img id="viewmp" src="<%= list.get(i).getImg()%>"></td>
+		<%-- <td><button type="checkbox" value="<%=i%>"></button></td> --%><tr> 
+	
+		<%} }%>
+
+</tr>
+</table>
+</form>
 <form name="mpost" id="mpost" method="post" action="/semi/mpinsert" enctype="multipart/form-data">
 <table align="center">
 <tr>

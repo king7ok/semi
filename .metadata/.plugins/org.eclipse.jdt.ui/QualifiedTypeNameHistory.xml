@@ -3,7 +3,9 @@
 <fullyQualifiedTypeName name="search.model.vo.Search"/>
 <fullyQualifiedTypeName name="search.model.dao.SearchDao"/>
 <fullyQualifiedTypeName name="main.model.dao.MainPostDao"/>
-<fullyQualifiedTypeName name="common.JDBCTemplate"/>
 <fullyQualifiedTypeName name="main.model.vo.MainPost"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="common.JDBCTemplate"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>

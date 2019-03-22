@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>lb</title>
+<title>semi</title>
 </head>
 <body>
 <% if(loginUser != null && loginUser.getUserId().equals("admin")){ %>
@@ -24,7 +24,7 @@
 <% }else{ %>
 	<%= message %><br>
 <% } %>
-<a href = "/lb/index.jsp">메인화면으로 이동</a><br>
+<a href = "/semi/index.jsp">메인화면으로 이동</a><br>
 </div>
 </body>
 </html>
