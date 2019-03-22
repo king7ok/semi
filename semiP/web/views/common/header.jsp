@@ -13,8 +13,9 @@
 </head>
 <script src="/semi/resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
+ var loginUser = <%= loginUser%>;
 		function click1(){
-			if(loginUser != null){
+			if(loginUser == null){
 				/* location.href = "/lb/views/productOrder/productOrder.jsp";
 					console.log(); */
 				location.href = "/semi/views/user/login.jsp";

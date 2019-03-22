@@ -59,23 +59,23 @@
 <form name="mpselect" id="mpselect" method="post" action="/semi/mpselect" enctype="multipart/form-data">
 <table align="center">
 <tr>
-<%-- 	<%for(int i =0;i<list.size();i++){ %>
+	<%for(int i =0;i<list.size();i++){ %>
 		 <td><a id="viewbutton" href="<%= list.get(i).getUrl()%>"><img id="viewmp" src="<%= list.get(i).getImg()%>"></a></td>
 		 <td><button type="checkbox" value="<%=i%>"></button></td>
-		<%if(i == 4 ){ %>
+		<%if(i == 5 ){ %>
 		</tr><td><a id="viewbutton" href="<%= list.get(i).getUrl()%>"><img id="viewmp" src="<%= list.get(i).getImg()%>"></a></td>
 		<td><button type="checkbox" value="<%=i%>"></button></td><tr> 
 	
-		<%} }%> --%>
-			<%for(int i =0;i<list.size();i++){ %>
+		<%}}%> 
+	<%-- 		<%for(int i =0;i<list.size();i++){ %>
 		 <td><img id="viewmp" src="<%= list.get(i).getImg()%>"></td>
-		<%--  <td><button type="checkbox" value="<%=i%>"></button></td> --%>
+		 <td><button type="checkbox" value="<%=i%>"></button></td>
 		<%if(i == 4 ){ %>
 		</tr><td><img id="viewmp" src="<%= list.get(i).getImg()%>"></td>
-		<%-- <td><button type="checkbox" value="<%=i%>"></button></td> --%><tr> 
+		<td><button type="checkbox" value="<%=i%>"></button></td><tr> 
 	
 		<%} }%>
-
+ --%>
 </tr>
 </table>
 </form>

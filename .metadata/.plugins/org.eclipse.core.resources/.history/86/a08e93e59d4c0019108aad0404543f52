@@ -1,14 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="main.model.vo.MainPost" %>
+    <%@ page import="main.model.vo.MainPost ,java.util.ArrayList"  %>
     <%
-	ArrayList<MainPost> list = new ArrayList<>()
+	ArrayList<MainPost> list = (ArrayList<MainPost>)request.getAttribute("list");
     %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="/semi/resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 /* if(message != null){
 	alert(message);
@@ -55,23 +56,26 @@
 <%@ include file="../common/adminHeader.jsp" %>
 <br><br><br><br><br><br><br><br><br><br>
 
-<form action="mpdelete" name="" method="get" >
+<form name="mpselect" id="mpselect" method="post" action="/semi/mpselect" enctype="multipart/form-data">
 <table align="center">
 <tr>
-	<%for(var i=0;i<list.size();i++){ %>
+<%-- 	<%for(int i =0;i<list.size();i++){ %>
+		 <td><a id="viewbutton" href="<%= list.get(i).getUrl()%>"><img id="viewmp" src="<%= list.get(i).getImg()%>"></a></td>
+		 <td><button type="checkbox" value="<%=i%>"></button></td>
+		<%if(i == 4 ){ %>
+		</tr><td><a id="viewbutton" href="<%= list.get(i).getUrl()%>"><img id="viewmp" src="<%= list.get(i).getImg()%>"></a></td>
+		<td><button type="checkbox" value="<%=i%>"></button></td><tr> 
 	
-	<td><img id="viewmp" src="#"></td>
-	<td><img id="viewmp" src="#"></td>
-	<td><img id="viewmp" src="#"></td>
-	<td><img id="viewmp" src="#"></td>
-	<td><img id="viewmp" src="#"></td>
-</tr>
-<tr>
-	<td><img id="viewmp" src="#"></td>
-	<td><img id="viewmp" src="#"></td>
-	<td><img id="viewmp" src="#"></td>
-	<td><img id="viewmp" src="#"></td>
-	<td><img id="viewmp" src="#"></td>
+		<%} }%> --%>
+			<%for(int i =0;i<list.size();i++){ %>
+		 <td><img id="viewmp" src="<%= list.get(i).getImg()%>"></td>
+		<%--  <td><button type="checkbox" value="<%=i%>"></button></td> --%>
+		<%if(i == 4 ){ %>
+		</tr><td><img id="viewmp" src="<%= list.get(i).getImg()%>"></td>
+		<%-- <td><button type="checkbox" value="<%=i%>"></button></td> --%><tr> 
+	
+		<%} }%>
+
 </tr>
 </table>
 </form>
